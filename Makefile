@@ -1,5 +1,5 @@
 all: depends
-	equivs-build wine-dummy
+	equivs-build wine
 
 depends:
 	@if [ -x /usr/bin/equivs-build ]; then \

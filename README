@@ -1,14 +1,14 @@
 wine-dummy - A dummy Debian package
 -----------------------------------
 
-    A dummy Debian package to satisfy users that install wine from
-    sources, but who would like to use
-    <http://packages.debian.org/unstable/winetricks>.
+    A dummy Debian package to mark "wine" as being installed in Debian to
+    satisfy users that install wine from
+    sources
 
-    As winetricks depends on package "wine", the locally installed
-    wine will not be known to dpkg. However, winetricks also depends
-    on "wine-dummy" as a last resort. With this, you can generate
-    wine-dummy.*deb for use with winetricks.
+    The locally installed wine will not be known to Debian package
+    system (dpkg) and some package require that a package "wine" is
+    present before they can be installed. With this, you can generate
+    a dummy wine*.deb for use to satisfy depends.
 
 Project contacts
 
@@ -26,8 +26,8 @@ Install
     apt-get install equivs
 
     make
-    dpkg -i wine-dummy*.deb
-    apt-get install winetricks
+    dpkg -i wine*.deb
+    apt-get install <package that requires "wine">
 
 License and copyright
 
