@@ -1,36 +1,51 @@
-README for wine-dummy
-----------------------
+wine-dummy - A dummy Debian package
+-----------------------------------
 
-This dummy Debian pacakge was created to satisfy users that install
-wine from sources, but who would like to use wintricks.
+    A dummy Debian package to satisfy users that install wine from
+    sources, but who would like to use
+    <http://packages.debian.org/unstable/winetricks>.
 
-As winetricks depends on package "wine", the locally installed wine is
-not known to dpkg. However, winetricks also depends on "wine-dummy" as
-a last resort.
+    As winetricks depends on package "wine", the locally installed
+    wine will not be known to dpkg. However, winetricks also depends
+    on "wine-dummy" as a last resort. With this, you can generate
+    wine-dummy.*deb for use with winetricks.
 
-INSTALL
+Project contacts
 
-apt-get install equivs
+    Homepage
+      https://github.com/jaalto/project--debian-wine-dummy
 
-make
-dpkg -i wine-dummy*.deb
-apt-get install winetricks
+    Reporting bugs
+      See above
 
-LICENSE AND COPYRIGHT
+    Source code repository
+      See above
 
-Copyright (C) Jari Aalto <jari.aalto@cante.net>
+Install
 
-License: GPL-2+
+    apt-get install equivs
 
-This package is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+    make
+    dpkg -i wine-dummy*.deb
+    apt-get install winetricks
 
-This package is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+License and copyright
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>.
+    Copyright (C) Jari Aalto <jari.aalto@cante.net>
+
+    License: GPL-2+
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+End of file
