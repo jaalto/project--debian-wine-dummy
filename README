@@ -1,9 +1,8 @@
 wine-dummy - A dummy Debian package
 -----------------------------------
 
-    A dummy Debian package to mark "wine" as being installed in Debian to
-    satisfy users that install wine from
-    sources
+    A dummy Debian package to mark "wine" as being installed in Debian
+    to satisfy users that install wine from sources
 
     The locally installed wine will not be known to Debian package
     system (dpkg) and some package require that a package "wine" is
