@@ -5,9 +5,11 @@ wine-dummy - A dummy Debian package
     to satisfy users that install wine from sources
 
     The locally installed wine will not be known to Debian package
-    system (dpkg) and some package require that a package "wine" is
-    present before they can be installed. With this, you can generate
-    a dummy wine*.deb for use to satisfy depends.
+    system (dpkg) before some package would require "wine" to be
+    present before it can be installed.
+
+    With this, you can generate a dummy wine*.deb package to satisfy
+    "wine" being recognized in package depends.
 
 Project contacts
 
